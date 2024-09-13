@@ -8,7 +8,7 @@ import { Teams } from "../Teams/Teams";
 import { CompletedTask } from "../AddTask/CompletedTask";
 import { ProgressTask } from "../AddTask/ProgressTask";
 import { PendingTask } from "../AddTask/PendingTask";
-import { SideBarResponsive } from "./SideBarResponsive";
+
 
 export const SidebarApplication = () => {
   const [SelectOption, setSelectOption] = useState("Dashboard");
@@ -19,7 +19,7 @@ export const SidebarApplication = () => {
   return (
     <SideBarlabelContainer>
       <SideBar onSelect={handleClickOption} SelectOption={SelectOption} />
-      <SideBarResponsive onSelect={handleClickOption} SelectOption={SelectOption} />
+      {/* <SideBarResponsive onSelect={handleClickOption} SelectOption={SelectOption} /> */}
       <SideBarRightSide>
         {SelectOption === "Dashboard" && <DasBoardOverView />}
         {SelectOption === "Task" && <AddTask />}

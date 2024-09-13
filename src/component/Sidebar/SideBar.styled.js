@@ -7,7 +7,16 @@ export const SideBarDiv = styled("div")(({ theme }) => ({
   paddingLeft: "20px",
 
   [theme.breakpoints.down("md")]: {
-    display: "none",
+    position: "fixed",
+    bottom: 0,
+
+    display: "flex",
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "space-between",
+    // width: "100%",
+    height: `calc(100vh - 960px)`,
+    // border: "1px solid",
   },
 }));
 
