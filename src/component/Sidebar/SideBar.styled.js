@@ -1,24 +1,50 @@
 import { styled } from "@mui/material";
 
+// export const SideBarDiv = styled("div")(({ theme }) => ({
+//   height: `calc(100vh - 60px)`,
+//   width: "200px",
+//   //   border: "1px solid",
+//   paddingLeft: "20px",
+
+//   [theme.breakpoints.down("md")]: {
+//     position: "fixed",
+//     bottom: 0,
+
+//     display: "flex",
+//     flexDirection: "row",
+//     alignItems: "center",
+//     justifyContent: "space-between",
+//     // width: "100%",
+//     height: `calc(100vh - 960px)`,
+//     // border: "1px solid",
+//   },
+// }));
+
 export const SideBarDiv = styled("div")(({ theme }) => ({
   height: `calc(100vh - 60px)`,
   width: "200px",
-  //   border: "1px solid",
   paddingLeft: "20px",
+  // For larger screens
 
   [theme.breakpoints.down("md")]: {
-    position: "fixed",
-    bottom: 0,
+    position: "fixed",  
+    bottom: 0,          
+    left: 0,            
+    right: 0,
+    width: "100%",     
+    height: `auto`,    
 
     display: "flex",
     flexDirection: "row",
     alignItems: "center",
     justifyContent: "space-between",
-    // width: "100%",
-    height: `calc(100vh - 960px)`,
-    // border: "1px solid",
+
+    zIndex: 1000,       
+    backgroundColor: "#fff",  
+    boxShadow: "0px -2px 10px rgba(0, 0, 0, 0.1)", 
   },
 }));
+
 
 export const SideBarDivRes = styled("div")(({ theme }) => ({
   position: "fixed",
