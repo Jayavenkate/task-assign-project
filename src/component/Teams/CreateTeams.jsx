@@ -35,7 +35,7 @@ export const CreateTeams = ({ open, onClose }) => {
                         <Inputlabel >UserName</Inputlabel>
                         <InputBoxContainer
                             type="text"
-                            placeholder="Title"
+                            placeholder="UserName"
                             onChange={(e) => setName(e.target.value)}
                             value={name}
                             required
@@ -45,7 +45,7 @@ export const CreateTeams = ({ open, onClose }) => {
                         <Inputlabel >User Role</Inputlabel>
                         <InputBoxContainer
                             type="text"
-                            placeholder="Description"
+                            placeholder="Role"
                             onChange={(e) => setRole(e.target.value)}
                             value={role}
                             required
@@ -55,7 +55,7 @@ export const CreateTeams = ({ open, onClose }) => {
                         <Inputlabel >User Email</Inputlabel>
                         <InputBoxContainer
                             type="text"
-                            placeholder="Description"
+                            placeholder="Email"
                             onChange={(e) => setEmail(e.target.value)}
                             value={email}
                             required
