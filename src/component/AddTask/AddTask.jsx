@@ -6,6 +6,7 @@ import {
     BoxInnercontainer,
     Createbutton,
     PElement,
+    StyledTableCell,
 } from "./AddTask.styled";
 import { AddTaskForm } from "./AddTaskForm";
 import { useDispatch, useSelector } from "react-redux";
@@ -148,14 +149,14 @@ export const AddTask = () => {
                                 <TableBody>
                                     {filteredTasks.map((task) => (
                                         <TableRow key={task.id}>
-                                            <TableCell align="left">{task.title}</TableCell>
-                                            <TableCell align="center">{task.priority}</TableCell>
-                                            <TableCell align="center">{task.user}</TableCell>
-                                            <TableCell align="center">
+                                            <StyledTableCell align="left">{task.title}</StyledTableCell>
+                                            <StyledTableCell align="center">{task.priority}</StyledTableCell>
+                                            <StyledTableCell align="center">{task.user}</StyledTableCell>
+                                            <StyledTableCell align="center">
                                                 {task.StartDate} - {task.StartDate}
-                                            </TableCell>
-                                            <TableCell align="center">{task.status}</TableCell>
-                                            <TableCell
+                                            </StyledTableCell>
+                                            <StyledTableCell align="center">{task.status}</StyledTableCell>
+                                            <StyledTableCell
                                                 align="center"
                                                 sx={{
                                                     display: "flex",
@@ -172,7 +173,7 @@ export const AddTask = () => {
                                                 /> */}
                                                 <ModeEditIcon
                                                     fontSize="small"
-                                                    sx={{ cursor: "pointer" ,color: "#5B8DFF"}}
+                                                    sx={{ cursor: "pointer", color: "#5B8DFF" }}
                                                     onClick={() => handleEditClick(task)}
                                                 />
                                                 <DeleteIcon
@@ -180,7 +181,7 @@ export const AddTask = () => {
                                                     sx={{ cursor: "pointer", color: "#c62828" }}
                                                     onClick={() => handleDeleteClick(task.id)}
                                                 />
-                                            </TableCell>
+                                            </StyledTableCell>
                                         </TableRow>
                                     ))}
                                 </TableBody>

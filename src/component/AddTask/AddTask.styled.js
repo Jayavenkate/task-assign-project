@@ -1,4 +1,4 @@
-import { Box, styled } from "@mui/material";
+import { Box, styled, TableCell } from "@mui/material";
 
 export const AddTaskContainer = styled("div")(({ theme }) => ({
   padding: "10px",
@@ -87,7 +87,7 @@ export const InputBoxContainerSelect = styled("select")(({ theme }) => ({
     width: "459px",
   },
   [theme.breakpoints.down("sm")]: {
-    width: "300px",
+    width: "320px",
   },
 }));
 
@@ -113,7 +113,7 @@ export const InputBoxContainerdate = styled("input")(({ theme }) => ({
     width: "459px",
   },
   [theme.breakpoints.down("sm")]: {
-    width: "158px",
+    width: "140px",
 
   },
 }));
@@ -130,7 +130,7 @@ export const InputBoxContainerSelectOption = styled("select")(({ theme }) => ({
     width: "459px",
   },
   [theme.breakpoints.down("sm")]: {
-    width: "158px",
+    width: "152px",
 
   },
 }));
@@ -235,3 +235,19 @@ export const BoxInnercontainer = styled(Box)(({ theme }) => ({
 
   [theme.breakpoints.up("lg")]: {},
 }));
+
+
+export const StyledTableCell = styled(TableCell)`
+  font-size: 1rem;
+
+  @media (min-width: ${({ theme }) => theme.breakpoints.values.sm}px) {
+    font-size: 10px;
+  }
+     @media (min-width: ${({ theme }) => theme.breakpoints.values.xs}px) {
+    font-size: 10px;
+  }
+
+  @media (min-width: ${({ theme }) => theme.breakpoints.values.md}px) {
+    font-size: 12px;
+  }
+`;
