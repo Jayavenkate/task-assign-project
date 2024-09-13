@@ -20,6 +20,7 @@ export const SideBarDivRes = styled("div")(({ theme }) => ({
   alignItems: "center",
   justifyContent: "space-between",
   width: "100%",
+  height: "50px",
 
   [theme.breakpoints.up("md")]: {
     display: "none",
