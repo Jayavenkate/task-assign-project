@@ -1,7 +1,7 @@
 import { Card, styled } from "@mui/material";
 
 export const CardSize = styled(Card)(({ theme }) => ({
-  width: "200px",
+  width: "150px",
   height: "80px",
   display: "flex",
   flexDirection: "row",
@@ -10,7 +10,7 @@ export const CardSize = styled(Card)(({ theme }) => ({
   padding: "0px 10px",
 
   [theme.breakpoints.up("lg")]: {
-    width: "200px",
+    width: "260px",
   },
   [theme.breakpoints.down("md")]: {
     width: "150px",
