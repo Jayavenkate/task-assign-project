@@ -10,7 +10,7 @@ export const CardSize = styled(Card)(({ theme }) => ({
   padding: "0px 10px",
 
   [theme.breakpoints.up("lg")]: {
-    width: "260px",
+    width: "200px",
   },
   [theme.breakpoints.down("md")]: {
     width: "150px",
