@@ -27,24 +27,23 @@ export const SideBarDiv = styled("div")(({ theme }) => ({
   // For larger screens
 
   [theme.breakpoints.down("md")]: {
-    position: "fixed",  
-    bottom: 0,          
-    left: 0,            
+    position: "fixed",
+    bottom: 0,
+    left: 0,
     right: 0,
-    width: "100%",     
-    height: `auto`,    
+    width: "100%",
+    height: `auto`,
 
     display: "flex",
     flexDirection: "row",
     alignItems: "center",
-    justifyContent: "space-between",
+    justifyContent: "center",
 
-    zIndex: 1000,       
-    backgroundColor: "#fff",  
-    boxShadow: "0px -2px 10px rgba(0, 0, 0, 0.1)", 
+    zIndex: 1000,
+    backgroundColor: "#fff",
+    boxShadow: "0px -2px 10px rgba(0, 0, 0, 0.1)",
   },
 }));
-
 
 export const SideBarDivRes = styled("div")(({ theme }) => ({
   position: "fixed",
@@ -119,9 +118,17 @@ export const SideBarlabelButton = styled("button")(({ theme }) => ({
     justifyContent: "center",
   },
   [theme.breakpoints.down("sm")]: {
-    width: "70px",
+    width: "60px",
     gap: "5px",
     fontSize: "8px",
     justifyContent: "center",
+  },
+}));
+
+export const ResIcon = styled("div")(({ theme }) => ({
+  display: "block",
+
+  [theme.breakpoints.down("sm")]: {
+    display: "none",
   },
 }));
