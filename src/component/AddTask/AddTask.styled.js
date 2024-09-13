@@ -70,6 +70,9 @@ export const InputBoxContainer = styled("input")(({ theme }) => ({
   [theme.breakpoints.up("lg")]: {
     width: "459px",
   },
+  [theme.breakpoints.down("sm")]: {
+    width: "300px",
+  },
 }));
 
 export const InputBoxContainerSelect = styled("select")(({ theme }) => ({
@@ -82,6 +85,9 @@ export const InputBoxContainerSelect = styled("select")(({ theme }) => ({
   border: "1px solid var(--Primary-Gray-300, #D2D5DA)",
   [theme.breakpoints.up("lg")]: {
     width: "459px",
+  },
+  [theme.breakpoints.down("sm")]: {
+    width: "300px",
   },
 }));
 
@@ -106,6 +112,10 @@ export const InputBoxContainerdate = styled("input")(({ theme }) => ({
   [theme.breakpoints.up("lg")]: {
     width: "459px",
   },
+  [theme.breakpoints.down("sm")]: {
+    width: "158px",
+
+  },
 }));
 
 export const InputBoxContainerSelectOption = styled("select")(({ theme }) => ({
@@ -118,6 +128,10 @@ export const InputBoxContainerSelectOption = styled("select")(({ theme }) => ({
   border: "1px solid var(--Primary-Gray-300, #D2D5DA)",
   [theme.breakpoints.up("lg")]: {
     width: "459px",
+  },
+  [theme.breakpoints.down("sm")]: {
+    width: "158px",
+
   },
 }));
 
@@ -156,6 +170,9 @@ export const AddButtonDiv = styled("button")(({ theme }) => ({
   [theme.breakpoints.up("lg")]: {
     width: "459px",
   },
+  [theme.breakpoints.down("sm")]: {
+    fontSize: "10px",
+  },
 }));
 
 export const CancelButtonDiv = styled("button")(({ theme }) => ({
@@ -172,6 +189,9 @@ export const CancelButtonDiv = styled("button")(({ theme }) => ({
   fontWeight: 500,
   [theme.breakpoints.up("lg")]: {
     width: "459px",
+  },
+  [theme.breakpoints.down("sm")]: {
+    fontSize: "10px",
   },
 }));
 
