@@ -110,6 +110,7 @@ export const AddTaskForm = ({ open, onClose }) => {
                                 value={priority}
                                 required
                             >
+                                <option value="">Select Priority</option>
                                 <option value="Low">Low</option>
                                 <option value="Medium">Medium</option>
                                 <option value="High">High</option>
@@ -122,6 +123,7 @@ export const AddTaskForm = ({ open, onClose }) => {
                                 value={status}
                                 required
                             >
+                                <option value="">Select Status</option>
                                 <option value="Pending">Pending</option>
                                 <option value="Progress">In Progress</option>
                                 <option value="Completed">Completed</option>
